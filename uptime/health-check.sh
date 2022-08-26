@@ -48,7 +48,7 @@ for (( i = 0; i < ${1:-10}; i++ )); do
     dateTime=$(date +'%Y-%m-%d %H:%M')
     if [[ $commit == true ]]
     then
-      echo $dateTime, $result >> "logs/${key}_report.log"
+      echo $dateTime, $result, $url, $response >> "logs/${key}_report.log"
 
       # By default we keep 2000 last log entries.  Feel free to modify this to meet your needs.
       echo "$(tail -8000 logs/${key}_report.log)" > "logs/${key}_report.log"
