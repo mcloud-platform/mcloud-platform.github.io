@@ -181,3 +181,4 @@
 2022-08-27 08:15, failed, https://ci-mcloud.herokuapp.com/, 403
 2022-08-27 08:18, failed, https://ci-mcloud.herokuapp.com/, 403
 2022-08-27 08:22, failed, https://ci-mcloud.herokuapp.com/, 403
+2022-08-27 08:24, success, https://ci-mcloud.herokuapp.com/jnlpJars/jenkins-cli.jar, 200
