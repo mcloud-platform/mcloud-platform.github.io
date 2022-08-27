@@ -25,4 +25,4 @@
 /app/Config/database.php
 /vendors/*
 
-uptime/logs
+#uptime/logs
