@@ -25,7 +25,6 @@ echo "***********************"
 echo "Starting health checks with ${#KEYSARRAY[@]} configs:"
 
 mkdir -p logs
-for (( i = 0; i < ${1:-10}; i++ )); do
   for (( index=0; index < ${#KEYSARRAY[@]}; index++))
   do
     key="${KEYSARRAY[index]}"
@@ -67,7 +66,3 @@ for (( i = 0; i < ${1:-10}; i++ )); do
     git commit -am '[Automated] Update Health Check Logs'
     git push
   fi
-
-  echo "we will check again in few seconds."
-  sleep 180
-done
