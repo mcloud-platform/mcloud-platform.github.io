@@ -218,7 +218,7 @@
           <div class="shape wow fadeInDown" data-wow-delay="0.3s"></div>
         </div>
         <div class="row">
-             <table class="table table-hover text-body">
+             <table id="templatedt" class="table table-hover text-body">
       <thead class="thead-dark"><tr><th scope="col">#</th><th scope="col">Host</th><th scope="col">Expired in</th><th scope="col">Expired on</th><th scope="col">Issuer</th></tr></thead>
       <tbody>
      <tr class="text-success"><th scope="row">1</th><td>ocswebexperts.com</td><td>82 days</td><td>Dec 9 14:50:56 2022 GMT</td><td>Let's Encrypt</td></tr>
@@ -240,11 +240,11 @@
      <tr class="text-success"><th scope="row">17</th><td>softlabx.com</td><td>73 days</td><td>Dec 1 08:04:22 2022 GMT</td><td>Let's Encrypt</td></tr>
      <tr class="text-info"><th scope="row">18</th><td>bloatware.in</td><td>48 days</td><td>Nov 6 05:00:47 2022 GMT</td><td>Let's Encrypt</td></tr>
      <tr class="text-success"><th scope="row">19</th><td>techsamadhan.in</td><td>226 days</td><td>May 3 03:19:35 2023 GMT</td><td>Starfield Technologies, Inc.</td></tr>
-     <tr class="text-info"><th scope="row">20</th><td>megatasktechnologies.com</td><td>56 days</td><td>Nov 13 09:39:24 2022 GMT</td><td>Let's Encrypt</td></tr>
+     <tr class="text-info"><th scope="row">20</th><td>megatasktechnologies.com</td><td>55 days</td><td>Nov 13 09:39:24 2022 GMT</td><td>Let's Encrypt</td></tr>
      <tr class="text-success"><th scope="row">21</th><td>www.samwebstudio.com</td><td>158 days</td><td>Feb 23 23:59:59 2023 GMT</td><td>Cloudflare, Inc.</td></tr>
      <tr class="text-info"><th scope="row">22</th><td>www.sysfosolutions.com</td><td>46 days</td><td>Nov 4 02:01:12 2022 GMT</td><td>Let's Encrypt</td></tr>
      <tr class="text-info"><th scope="row">23</th><td>hitechsoftservices.com</td><td>51 days</td><td>Nov 8 23:44:10 2022 GMT</td><td>Let's Encrypt</td></tr>
-     <tr class="text-danger"><th scope="row">24</th><td>www.globalsolutionit.com</td><td>0 days</td><td></td><td></td></tr>
+     <tr class="text-success"><th scope="row">24</th><td>www.globalsolutionit.com</td><td>136 days</td><td>Feb 1 13:02:48 2023 GMT</td><td>Starfield Technologies, Inc.</td></tr>
      <tr class="text-success"><th scope="row">25</th><td>www.youtube.com</td><td>63 days</td><td>Nov 21 08:16:32 2022 GMT</td><td>Google Trust Services LLC</td></tr>
      <tr class="text-success"><th scope="row">26</th><td>adamtheautomator.com</td><td>192 days</td><td>Mar 29 23:59:59 2023 GMT</td><td>Cloudflare, Inc.</td></tr>
      <tr class="text-success"><th scope="row">27</th><td>www.flipkart.com</td><td>288 days</td><td>Jul 4 07:50:53 2023 GMT</td><td>GoDaddy.com, Inc.</td></tr>
@@ -286,6 +286,7 @@
      <tr class="text-success"><th scope="row">63</th><td>www.web4u.in</td><td>80 days</td><td>Dec 7 16:59:15 2022 GMT</td><td>Let's Encrypt</td></tr>
      <tr class="text-info"><th scope="row">64</th><td>www.pacts.in</td><td>30 days</td><td>Oct 18 23:26:58 2022 GMT</td><td>Let's Encrypt</td></tr>
       </tbody>
+      <tfoot class="thead-dark"><tr><th scope="col">#</th><th scope="col">Host</th><th scope="col">Expired in</th><th scope="col">Expired on</th><th scope="col">Issuer</th></tr></tfoot>
     </table>
         </div>
       </div>
@@ -398,6 +399,12 @@
     <!-- End Preloader -->
     
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+    <script>
+      $(document).ready(function () {
+          $('#templatedt').DataTable();
+      });
+    </script>
     <script src="assets/js/jquery-min.js"></script>
     <script src="assets/js/popper.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
