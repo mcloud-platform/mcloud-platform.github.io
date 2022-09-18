@@ -214,51 +214,11 @@
     <section id="pricing" class="section-padding">
       <div class="container">
         <div class="section-header text-center">          
-          <h2 class="section-title wow fadeInDown" data-wow-delay="0.3s">SSL Certificate Status</h2>
+          <h2 class="section-title wow fadeInDown" data-wow-delay="0.3s">${DATA_TABLE_TITLE:-SSL Certificate Status}</h2>
           <div class="shape wow fadeInDown" data-wow-delay="0.3s"></div>
         </div>
         <div class="row">
-          <table class="table table-hover text-body">
-            <thead class="thead-dark">
-              <tr>
-                <th scope="col">#</th>
-                <th scope="col">Host</th>
-                <th scope="col">Expired in</th>
-                <th scope="col">Expired on</th>
-                <th scope="col">Issuer</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr class="text-danger">
-                <th scope="row">1</th>
-                <td>planetwebit.com</td>
-                <td>35 days</td>
-                <td>Nov 8 03:59:02 2022 GMT</td>
-                <td>Let's Encrypt</td>
-              </tr>
-              <tr class="text-warning">
-                <th scope="row">2</th>
-                <td>Jacob</td>
-                <td>35 days</td>
-                <td>Thornton</td>
-                <td>@fat</td>
-              </tr>
-              <tr class="text-info">
-                <th scope="row">3</th>
-                <td>Larry</td>
-                <td>35 days</td>
-                <td>the Bird</td>
-                <td>@twitter</td>
-              </tr>
-              <tr class="text-success">
-                <th scope="row">4</th>
-                <td>Harry</td>
-                <td>70 days</td>
-                <td>Nov 8 03:59:02 2022 GMT</td>
-                <td>Let's Encrypt</td>
-              </tr>
-            </tbody>
-          </table>
+      $(cert_status_html)
         </div>
       </div>
     </section>
