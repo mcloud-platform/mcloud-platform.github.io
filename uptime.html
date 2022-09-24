@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>mCloud - Automation Platform</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" >
+    <!-- Icon -->
+    <link rel="stylesheet" href="assets/fonts/line-icons.css">
+    <!-- Owl carousel -->
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/owl.theme.css">
+    
+    <!-- Animate -->
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <!-- Main Style -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <!-- Responsive Style -->
+    <link rel="stylesheet" href="assets/css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   
+    <link rel="stylesheet" href="uptime/index.css" />
+    <script src="uptime/index.js"></script>
+  </head>
+  <body>
+
+    <!-- Header Area wrapper Starts -->
+    <header id="header-wrap">
+      <!-- Navbar Start -->
+      <nav class="navbar navbar-expand-md bg-inverse fixed-top scrolling-navbar">
+        <div class="container">
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <a href="index.html" class="navbar-brand"><img src="https://raw.githubusercontent.com/mCloud-Automation/mData/master/msend/images/MLOGO.png" alt=""></a>       
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="lni-menu"></i>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mr-auto w-100 justify-content-end clearfix">
+              <li class="nav-item active">
+                <a class="nav-link" href="#hero-area">
+                  Home
+                </a>
+              </li>
+              <!-- <li class="nav-item">
+                <a class="nav-link" href="#services">
+                  Services
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#team">
+                  Team
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#pricing">
+                  Pricing
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#testimonial">
+                  Testimonial
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">
+                  Contact
+                </a>
+              </li> -->
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- Navbar End -->
+
+      <!-- Hero Area Start -->
+      <div id="hero-area" class="hero-area-bg">
+        <div class="container">      
+          <div class="row">
+            <div class="col-lg-7 col-md-12 col-sm-12 col-xs-12">
+              <div class="contents">
+                <h2 class="head-title">mCloud Platform<br>Monitoring Web Smartly</h2>
+                <p>Help you to monitor cloud infrastructure and services with powerful opensource utility. We have managed Services & Self hosted Services.</p>
+                <div class="header-button">
+                  <a href="https://harrythedevopsguy.slack.com/" class="btn btn-common"><i class="fa-brands fa-slack"></i> Slack</i></a>
+                  <a href="https://chat.whatsapp.com/Go0FgwQs9GtKp6js2l6RTG" class="btn btn-common"><i class="fa-brands fa-whatsapp"></i> WhatsApp</a>
+                  <a href="https://t.me/TheDevOpsProfessionals" class="btn btn-common"><i class="fa-brands fa-telegram"></i> Telegram</a>
+                  <a href="#" class="btn btn-border video-popup">Learn More</i></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-5 col-md-12 col-sm-12 col-xs-12">
+              <div class="intro-img">
+                <img class="img-fluid" src="assets/img/intro-mobile.png" alt="">
+              </div>            
+            </div>
+          </div> 
+        </div> 
+      </div>
+      <!-- Hero Area End -->
+
+    </header>
+    <!-- Header Area wrapper End -->  
+
+    <!-- mCert section Start --> 
+    <section id="pricing" class="section-padding">
+      <div class="container">
+        <div class="section-header text-center">          
+          <h2 class="section-title wow fadeInDown" data-wow-delay="0.3s">${DATATABLE_TITLE}</h2>
+          <div class="shape wow fadeInDown" data-wow-delay="0.3s"></div>
+        </div>
+        <div class="row text-left">
+        ${DATATABLE}
+        </div>
+      </div>
+    </section>
+    <!-- mCert Table Section End -->
+
+    <div class="pageContainer">
+        <div class="headline">
+          <img src="https://1.bp.blogspot.com/-KoH7_3biq1M/YULIAX1XulI/AAAAAAAAAo8/t3kJArwlc9AqEsdb4TLjrwjfddF8FoLowCLcBGAsYHQ/s227/coollogo_com-74831146.png" alt="Logo" width="200px" />
+          <span> Uptime Status </span>
+        </div>
+        <div id="reports" class="reportContainer"></div>
+        <div id="tooltip" class="tooltip" style="opacity: 0">
+          <div id="tooltipArrow" class="tooltipArrow"></div>
+          <div id="tooltipDateTime" class="tooltipDateTime"></div>
+          <div id="tooltipStatus" class="tooltipStatus"></div>
+          <hr />
+          <div id="tooltipDescription" class="tooltipDescription"></div>
+        </div>
+        <div id="templates" style="display: none">
+          <div
+            id="statusSquareTemplate"
+            class="statusSquare $color"
+            data-status="$color"
+          ></div>
+          <div id="statusLineTemplate" class="statusLine"></div>
+          <div
+            id="statusStreamContainerTemplate"
+            class="statusStreamContainer"
+          ></div>
+          <div id="statusContainerTemplate" class="statusContainer">
+            <div class="statusHeader">
+              <h6 class="statusTitle">$title&nbsp;</h6>
+              <div class="$color statusHeadline">$status</div>
+            </div>
+            <div class="statusSubtitle">
+              <div class="sectionUrl"><a href="$url">$url</a></div>
+              <div class="statusUptime">$upTime in the last 30 days</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <!-- Call To Action Section Start -->
+    <section id="cta" class="section-padding">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-xs-12 wow fadeInLeft" data-wow-delay="0.3s">           
+            <div class="cta-text">
+              <h4>Join us</h4>
+              <p> Please join community to discuss more about this</p>
+            </div>
+          </div>
+          <div class="col-lg-2 col-md-2 col-xs-2 text-right wow fadeInRight" data-wow-delay="0.3s">
+            </br><a href="https://harrythedevopsguy.slack.com/" class="btn btn-common"><i class="fa-brands fa-slack" style="font-size:36px"></i></a>
+          </div>
+          <div class="col-lg-2 col-md-2 col-xs-2 text-right wow fadeInRight" data-wow-delay="0.3s">
+            </br><a href="https://chat.whatsapp.com/Go0FgwQs9GtKp6js2l6RTG" class="btn btn-common"><i class="fa-brands fa-whatsapp" style="font-size:36px"></i></a>
+          </div>
+          <div class="col-lg-2 col-md-2 col-xs-2 text-right wow fadeInRight" data-wow-delay="0.3s">
+            </br><a href="https://t.me/TheDevOpsProfessionals" class="btn btn-common"><i class="fa-brands fa-telegram" style="font-size:36px" aria-hidden="true"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Call To Action Section Start -->
+
+    <!-- Footer Section Start -->
+    <footer id="footer" class="footer-area section-padding">
+      <div id="copyright">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="copyright-content">
+                <p>Copyright © 2022 <a rel="nofollow" href="https://mcloud-platform.github.io">mCloud-Platform</a> All Right Reserved</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>   
+    </footer> 
+    <!-- Footer Section End -->
+
+    <!-- Go to Top Link -->
+    <a href="#" class="back-to-top">
+    	<i class="lni-arrow-up"></i>
+    </a>
+    
+    <!-- Preloader -->
+    <div id="preloader">
+      <div class="loader" id="loader-1"></div>
+    </div>
+    <!-- End Preloader -->
+    
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script>
+        genAllReports();
+    </script>
+    <script src="assets/js/jquery-min.js"></script>
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/wow.js"></script>
+    <script src="assets/js/jquery.nav.js"></script>
+    <script src="assets/js/scrolling-nav.js"></script>
+    <script src="assets/js/jquery.easing.min.js"></script>  
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/form-validator.min.js"></script>
+    <script src="assets/js/contact-form-script.min.js"></script>
+      
+  </body>
+</html>
