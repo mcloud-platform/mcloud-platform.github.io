@@ -1,4 +1,4 @@
-/* * {
+* {
   box-sizing: border-box;
 }
 
@@ -80,7 +80,7 @@ h6 {
 a {
   color: #194b7d;
   text-decoration: none;
-} */
+}
 
 .outlineButton,
 .button,
@@ -96,14 +96,14 @@ button {
   white-space: nowrap;
 }
 
-/* footer {
+footer {
   color: #9c9c9c;
   margin: 40px;
 }
 
 footer a {
   font-weight: bold;
-} */
+}
 
 .pageContainer {
   padding: 30px 50px;
