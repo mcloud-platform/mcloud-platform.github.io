@@ -1,4 +1,4 @@
-/* * {
+{
   box-sizing: border-box;
 }
 
@@ -21,7 +21,7 @@ body {
   text-align: center;
   transition: opacity 0.3s;
 }
-h1,
+/** h1, 
 h2,
 h3,
 h4,
