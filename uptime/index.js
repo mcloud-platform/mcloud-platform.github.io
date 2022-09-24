@@ -213,7 +213,7 @@ function splitRowsByDate(rows) {
 let tooltipTimeout = null;
 function showTooltip(element, key, date, color) {
   clearTimeout(tooltipTimeout);
-  const toolTipDiv = document.getElementById("mtooltip");
+  const toolTipDiv = document.getElementById("tooltip");
 
   document.getElementById("tooltipDateTime").innerText = date.toDateString();
   document.getElementById("tooltipDescription").innerText =
@@ -231,7 +231,7 @@ function showTooltip(element, key, date, color) {
 
 function hideTooltip() {
   tooltipTimeout = setTimeout(() => {
-    const toolTipDiv = document.getElementById("mtooltip");
+    const toolTipDiv = document.getElementById("tooltip");
     toolTipDiv.style.opacity = "0";
   }, 1000);
 }
