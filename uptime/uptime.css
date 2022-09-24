@@ -237,7 +237,7 @@ footer a {
   color: #fff;
 }
 
-.tooltip {
+.mtooltip {
   background-color: #fff;
   box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
@@ -252,7 +252,7 @@ footer a {
   transition: opacity 0.2s;
 }
 
-.tooltip .tooltipArrow {
+.mtooltip .tooltipArrow {
   position: absolute;
   bottom: 100%;
   width: 4px;
@@ -263,25 +263,25 @@ footer a {
   margin-left: -2px;
 }
 
-.tooltip .tooltipDateTime {
+.mtooltip .tooltipDateTime {
   font-size: 12px;
   color: #7c7c7c;
   text-transform: uppercase;
   font-weight: 600;
 }
 
-.tooltip .tooltipKey {
+.mtooltip .tooltipKey {
   color: #ccc;
   font-size: 10px;
 }
 
-.tooltip .tooltipDescription {
+.mtooltip .tooltipDescription {
   margin-top: 12px;
   font-size: 14px;
   color: #181818;
 }
 
-.tooltip #tooltipStatus {
+.mtooltip #tooltipStatus {
   padding: 4px 8px;
   border-radius: 15px;
   font-size: 12px;
@@ -290,7 +290,7 @@ footer a {
   display: inline-block;
 }
 
-.tooltip hr {
+.mtooltip hr {
   border: none;
   border-top: 1px solid #ededed;
   margin-top: 16px;
