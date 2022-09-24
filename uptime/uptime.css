@@ -20,8 +20,9 @@ body {
   padding: 0;
   text-align: center;
   transition: opacity 0.3s;
-} */
-/** h1, 
+} 
+
+h1, 
 h2,
 h3,
 h4,
@@ -80,7 +81,8 @@ h6 {
 a {
   color: #194b7d;
   text-decoration: none;
-} */
+}*/
+
 
 .outlineButton,
 .button,
